@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmaya Graphics Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #333333;
+            background-image: url('https://s3.ap-south-1.amazonaws.com/chinmaya.d/cloud+logo.jpg');
+            background-size: 1080px 650px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.8);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .atomic-symbol {
+            font-size: 200px;
+            animation: roamAtomic 10s infinite linear;
+            position: absolute;
+        }
+        @keyframes roamAtomic {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50px, 50px);
+            }
+            50% {
+                transform: translate(0, 0);
+            }
+            75% {
+                transform: translate(-50px, -50px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>Welcome to the Chinmaya Graphics Page!</h1>
+        <div class="atomic-symbol">⚛</div>
+        <div class="container">
+            <!-- Content goes here -->
+        </div>
+    </div>
+</body>
+
+</html>
