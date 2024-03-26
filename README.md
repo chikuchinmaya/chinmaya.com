@@ -1,1 +1,1 @@
-# https://chikuchinmaya.github.io/www.chinmaya.com/
+# https://chikuchinmaya.github.io/chinmaya.com/
